@@ -23,6 +23,15 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </a>
+            <div>
+                <img class="rounded-circle mr-2 head-icon" [src]="user.icon | safeUrl"
+                    alt="Place image title"
+                    *ngIf="!isImageLoading; else noImageFound">
+                    <ng-template #noImageFound>
+                        <img src="../assets/images/user.png" alt="anonymous">
+                    </ng-template>
+                <span class="hidden-xs" [innerHTML]="user.name"></span>
+            </div>
         </nav>
     </header>
 

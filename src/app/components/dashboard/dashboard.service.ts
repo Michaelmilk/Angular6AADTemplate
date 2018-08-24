@@ -15,7 +15,6 @@ import { Logger } from "../../helper/logger";
 @Injectable()
 export class DashboardService extends BaseService {
 	private headers = new HttpHeaders({ "Content-Type": "application/json" });
-	private ekgServiceUrl = `${this.serverUrl}/dashboard`; // URL to web api
 	constructor(public logger: Logger, public httpClient: HttpClient) {
 		super(logger, httpClient);
 	}

@@ -6,6 +6,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DashboardComponent } from './dashboard.component';
 import { DashboardService } from './dashboard.service';
 import { DashboardRoutingModule } from './dashboard-routing.module';
+import { PipeModule } from '../../pipe/pipe.module';
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import { DashboardRoutingModule } from './dashboard-routing.module';
     BrowserAnimationsModule,
     FormsModule,
     HttpClientModule,
-    DashboardRoutingModule
+    DashboardRoutingModule,
+    PipeModule
   ],
   declarations: [
     DashboardComponent
